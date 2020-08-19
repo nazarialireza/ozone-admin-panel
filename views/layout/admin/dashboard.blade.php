@@ -12,20 +12,22 @@
     <!-- Bootstrap core CSS -->
     <link href="{{ $baseURI . 'dist/css/app.css' }}" rel="stylesheet">
     <!-- Custom styles for this template -->
+    <style>
 
+    </style>
 </head>
 
-<body>
-
-@include('layout.admin.include.top_nav')
-
+<body class="wrapper">
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+        @include('layout.admin.include.top_nav')
+    </nav>
 <div class="container-fluid">
     <div class="row">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
             @include('layout.admin.include.sidebar')
         </nav>
 
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 content">
             @yield('content')
         </main>
     </div>
