@@ -1,0 +1,15 @@
+{
+  "require": {
+    "eftec/bladeone": "^3.46",
+    "symfony/routing": "^5.1",
+    "symfony/http-foundation": "^5.1",
+    "symfony/yaml": "^5.1",
+    "symfony/config": "^5.1",
+    "sensio/framework-extra-bundle": "^5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  }
+}
