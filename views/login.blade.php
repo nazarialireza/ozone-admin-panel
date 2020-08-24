@@ -3,10 +3,11 @@
 @section('content')
 <div>
 	<div class="container">
-		<div class="row">
-			<div class="col border border-primary d-flex justify-content-center rounded offset-3 col-md-6">
-				<div id="login-box" class="col-md-12">
-					<form id="login-form1" class="form bg-1" action="" method="post">
+        <div class="row mx-auto">
+		<div class="jumbotron col col-md-8 col-lg-6 mx-auto">
+			<div class="" >
+				<div id="login-box" class="">
+					<form id="login-form1" class="form bg-2" action="" method="post">
 						<h2 class="text-left text-info">Login</h2>
 							<br>
 							<div class="form-group">
@@ -39,8 +40,9 @@
 					    </div>
 						<br>
 					</form>
-				</div>
+				</div></div>
 			</div>
+        </div>
 		</div>
 	</div>
 </div>
