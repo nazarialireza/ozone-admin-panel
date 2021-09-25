@@ -16,11 +16,7 @@ define('OAP_START', microtime(true));
 */
 
 require __DIR__.'/vendor/autoload.php';
-
-$app = new Symfony\Component\Console\Application();
-
-// register commands
-$app->add(new server());
+$app = require_once __DIR__.'/bootstrap/app.php';
 
 $app->run();
 

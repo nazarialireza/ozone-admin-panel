@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__.'/vendor/autoload.php';
+require_once __DIR__ . './../vendor/autoload.php';
 //use eftec\bladeone\BladeOne;
 //
 //$views = __DIR__ . '/views';
@@ -16,7 +16,7 @@ use Symfony\Component\Routing;
 
 
 $request = Request::createFromGlobals();
-$routes = include __DIR__.'/config/routes.php';
+$routes = include __DIR__ . './../config/routes.php';
 
 $context = new Routing\RequestContext();
 $matcher = new Routing\Matcher\UrlMatcher($routes, $context);
