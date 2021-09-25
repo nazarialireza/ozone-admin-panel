@@ -5,11 +5,15 @@
     "symfony/http-foundation": "^5.1",
     "symfony/yaml": "^5.1",
     "symfony/config": "^5.1",
-    "sensio/framework-extra-bundle": "^5.5"
+    "sensio/framework-extra-bundle": "^5.5",
+    "symfony/console": "^5.3"
   },
   "autoload": {
     "psr-4": {
       "": "src/"
-    }
+    },
+    "classmap": [
+      "server.php"
+    ]
   }
 }

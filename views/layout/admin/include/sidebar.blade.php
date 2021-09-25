@@ -49,7 +49,9 @@
                     <a class="nav-link" href="#"><span data-feather="layers"></span> Integrations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><span data-feather="log-in"></span> Login</a>
+					<a class="nav-link  {{ isset($pathInfo) && $pathInfo == '/pages/login' ? 'active' : ''}}"
+						href="{{$baseURI}}index.php/pages/login">
+						 <span data-feather="log-in"></span> Login</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><span data-feather="edit"></span> Registration</a>
