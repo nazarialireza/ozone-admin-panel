@@ -11,18 +11,14 @@ class PageController
 {
     public function index(Request $request)
     {
-        $baseURI = str_ireplace('index.php', '',$_SERVER['SCRIPT_NAME']);
-        return new Response(View::make()->run("welcome", ["baseURI" => $baseURI]));
+
+        return new Response(View::make()->run("welcome"));
     }
 
     public function page(Request $request, $page)
     {
         //dd(__DIR__, );
         $pathInfo = $_SERVER['PATH_INFO'];
-        $baseURI = str_ireplace('index.php', '',$_SERVER['SCRIPT_NAME']);
-        return new Response(View::make()->run("$page", [
-            'baseURI' => $baseURI,
-            'pathInfo' => $pathInfo,
-        ]));
+        return new Response(View::make()->run("$page", ['pathInfo' => $pathInfo]));
     }
 }

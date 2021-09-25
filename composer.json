@@ -9,11 +9,14 @@
     "symfony/console": "^5.3"
   },
   "autoload": {
+    "files": [
+      "app/Helper/core.php"
+    ],
     "psr-4": {
-      "": "src/"
+      "": "app/"
     },
     "classmap": [
-      "server.php"
+      "bootstrap/server.php"
     ]
   }
 }

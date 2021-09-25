@@ -7,8 +7,8 @@
 <div class="sidebar-sticky">
     <ul class="nav flex-column">
         <li class="nav-item">
-            <a class="nav-link {{ isset($pathInfo) && $pathInfo == '/pages/dashboard' ? 'active' : ''}}"
-               href="{{$baseURI}}index.php/pages/dashboard">
+            <a class="nav-link {{active('/pages/dashboard')}}"
+               href="{{url('pages/dashboard')}}">
                 <span data-feather="home"></span>
                 Dashboard<span class="sr-only">(current)</span>
             </a>
@@ -35,8 +35,8 @@
             </a>
             <ul class="navbar-nav collapse pl-3" id="pagesSubmenu">
                 <li class="nav-item">
-                    <a class="nav-link  {{ isset($pathInfo) && $pathInfo == '/pages/orders' ? 'active' : ''}}"
-                       href="{{$baseURI}}index.php/pages/orders">
+                    <a class="nav-link  {{active('pages/orders')}}"
+                       href="{{url('pages/orders')}}">
                         <span data-feather="gift"></span> Orders</a>
                 </li>
                 <li class="nav-item">
@@ -49,8 +49,8 @@
                     <a class="nav-link" href="#"><span data-feather="layers"></span> Integrations</a>
                 </li>
                 <li class="nav-item">
-					<a class="nav-link  {{ isset($pathInfo) && $pathInfo == '/pages/login' ? 'active' : ''}}"
-						href="{{$baseURI}}index.php/pages/login">
+					<a class="nav-link  {{active('pages/login')}}"
+						href="{{url('pages/login')}}">
 						 <span data-feather="log-in"></span> Login</a>
                 </li>
                 <li class="nav-item">

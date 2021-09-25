@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="{{ $baseURI . 'favicon.ico' }}">
+    <link rel="icon" href="{{ url('favicon.ico') }}">
 
     <title>Ozone Admin Panel</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ $baseURI . 'dist/css/app.css' }}" rel="stylesheet">
+    <link href="{{ url('assets/css/app.css') }}" rel="stylesheet">
     <!-- Custom styles for this template -->
     <style>
 
@@ -37,19 +37,19 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="{{ $baseURI . 'assets/js/jquery-3.2.1.slim.min.js' }} " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="{{ $baseURI .'assets/js/vendor/jquery-slim.min.js'}}"><\/script>')</script>
-<script src="{{ $baseURI .'assets/js/vendor/popper.min.js'}}"></script>
-<script src="{{ $baseURI .'dist/js/bootstrap.min.js'}}"></script>
+<script src="{{ url('assets/js/jquery-3.2.1.slim.min.js') }} " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="{{ url('assets/js/vendor/jquery-slim.min.js')}}"><\/script>')</script>
+<script src="{{ url('assets/js/vendor/popper.min.js')}}"></script>
+<script src="{{ url('assets/js/bootstrap.min.js')}}"></script>
 
 <!-- Icons -->
-<script src="{{ $baseURI .'assets/js/feather.min.js'}}"></script>
+<script src="{{ url('assets/js/feather.min.js')}}"></script>
 <script>
     feather.replace()
 </script>
 
 <!-- Graphs -->
-<script src="{{ $baseURI .'assets/js/Chart.js_2.7.1/Chart.min.js'}}"></script>
+<script src="{{ url('assets/js/Chart.js_2.7.1/Chart.min.js')}}"></script>
 <script>
     var ctx = document.getElementById("myChart");
     var myChart = new Chart(ctx, {

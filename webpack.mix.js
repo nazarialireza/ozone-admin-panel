@@ -11,8 +11,8 @@ let mix = require('webpack-mix');
  |
  */
 
-mix.js('src/js/app.js', 'dist/js/')
-    .sass('src/scss/app.scss', 'dist/css/');
+mix.js('resource/js/app.js', 'public/assets/js/')
+    .sass('resource/scss/app.scss', 'public/assets/css/');
 
 // Full API
 // mix.js(src, output);
