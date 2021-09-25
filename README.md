@@ -34,6 +34,11 @@ Which mean I can access it with following address by XAMPP, if my localhost is r
 
 By visiting related address you can see the welcome page.
 
+## Run PHP server
+You can run the following commend in the root project directory then browse the `127.0.0.1:8000` with your web browser.
+
+`php -S 127.0.0.1:8000 -t public/`
+
 ## How to add new pages?
 By adding `*.blade.php` file in the `view` folder you can add simple pages, also you can just `save as` one of the existed page to create new pages, for example: 
 
