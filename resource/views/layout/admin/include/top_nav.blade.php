@@ -1,5 +1,5 @@
 
-    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="{{$baseURI}}">Ozone Admin Panel</a>
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="{{url('')}}">Ozone Admin Panel</a>
     <a class="btn btn-group-toggle"><span class="navbar-toggler-icon"></span></a>
     <div class="w-100">
         <ul class="nav">
