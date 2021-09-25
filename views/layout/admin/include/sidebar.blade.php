@@ -8,7 +8,7 @@
     <ul class="nav flex-column">
         <li class="nav-item">
             <a class="nav-link {{ isset($pathInfo) && $pathInfo == '/pages/dashboard' ? 'active' : ''}}"
-               href="{{$baseURI}}index.php/pages/dashboard">
+               href="{{$baseURI}}pages/dashboard">
                 <span data-feather="home"></span>
                 Dashboard<span class="sr-only">(current)</span>
             </a>
@@ -36,7 +36,7 @@
             <ul class="navbar-nav collapse pl-3" id="pagesSubmenu">
                 <li class="nav-item">
                     <a class="nav-link  {{ isset($pathInfo) && $pathInfo == '/pages/orders' ? 'active' : ''}}"
-                       href="{{$baseURI}}index.php/pages/orders">
+                       href="{{$baseURI}}pages/orders">
                         <span data-feather="gift"></span> Orders</a>
                 </li>
                 <li class="nav-item">
@@ -50,7 +50,7 @@
                 </li>
                 <li class="nav-item">
 					<a class="nav-link  {{ isset($pathInfo) && $pathInfo == '/pages/login' ? 'active' : ''}}"
-						href="{{$baseURI}}index.php/pages/login">
+						href="{{$baseURI}}pages/login">
 						 <span data-feather="log-in"></span> Login</a>
                 </li>
                 <li class="nav-item">
