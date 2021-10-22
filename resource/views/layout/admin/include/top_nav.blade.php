@@ -1,8 +1,8 @@
 <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <ul class="mainbar navbar-nav float-start">
-            <li class=" ">
-                <a class="navbar-brand" href="#">
+            <li class=" " >
+                <a class="navbar-brand" href="#" style="background-color: transparent;">
                     <img class="logo-header" src="{{url('assets/imgs/logoheader.png')}}">
                 </a>
             </li>
