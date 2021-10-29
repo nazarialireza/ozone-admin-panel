@@ -20,32 +20,32 @@
 
 <body class="wrapper">
 @include('layout.admin.include.top_nav')
-{{--<div class="container-fluid">--}}
-{{--    <div class="row">--}}
-{{--        <nav class="col-md-2 d-none d-md-block bg-light sidebar">--}}
-{{--            @include('layout.admin.include.sidebar')--}}
-{{--        </nav>--}}
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            @include('layout.admin.include.sidebar')
+        </nav>
 
-{{--        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 content">--}}
-{{--            @yield('content')--}}
-{{--        </main>--}}
-{{--    </div>--}}
-{{--</div>--}}
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 content">
+            @yield('content')
+        </main>
+    </div>
+</div>
 
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-{{--<script src="{{ url('assets/js/jquery-3.2.1.slim.min.js') }} " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>--}}
-{{--<script>window.jQuery || document.write('<script src="{{ url('assets/js/vendor/jquery-slim.min.js')}}"><\/script>')</script>--}}
-{{--<script type="popper" src="{{ url('assets/js/vendor/popper.min.js')}}"></script>--}}
-{{--<script src="{{ url('assets/js/bootstrap.min.js')}}"></script>--}}
+<script src="{{ url('assets/js/jquery-3.2.1.slim.min.js') }} " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="{{ url('assets/js/vendor/jquery-slim.min.js')}}"><\/script>')</script>
+<script type="popper" src="{{ url('assets/js/vendor/popper.min.js')}}"></script>
+<script src="{{ url('assets/js/bootstrap.min.js')}}"></script>
 
 <!-- Icons -->
-{{--<script src="{{ url('assets/js/feather.min.js')}}"></script>--}}
+<script src="{{ url('assets/js/feather.min.js')}}"></script>
 
 <!-- Graphs -->
-{{--<script src="{{ url('assets/js/Chart.js_2.7.1/Chart.min.js')}}"></script>--}}
+<script src="{{ url('assets/js/Chart.js_2.7.1/Chart.min.js')}}"></script>
 <script src="{{ url('assets/js/app.js')}}"></script>
 
 <script>
