@@ -1,3 +1,4 @@
+
 @extends('layout.admin.dashboard')
 
 @section('content')
@@ -14,5 +15,4 @@
             </button>
         </div>
     </div>
-
 @endsection

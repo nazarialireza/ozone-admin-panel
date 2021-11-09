@@ -12,7 +12,9 @@ let mix = require('webpack-mix');
  */
 
 mix.js('resource/js/app.js', 'public/assets/js/')
-    .sass('resource/scss/app.scss', 'public/assets/css/');
+    .sass('resource/scss/app.scss', 'public/assets/css/')
+    .sourceMaps();
+
 
 // Full API
 // mix.js(src, output);

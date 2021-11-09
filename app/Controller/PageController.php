@@ -17,8 +17,8 @@ class PageController
 
     public function page(Request $request, $page)
     {
-        //dd(__DIR__, );
         $pathInfo = $_SERVER['PATH_INFO'];
+        //dd($request,new Response() );
         return new Response(View::make()->run("$page", ['pathInfo' => $pathInfo]));
     }
 }
