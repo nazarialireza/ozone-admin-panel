@@ -1,6 +1,6 @@
-<nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar  navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container-fluid">
-        <ul class="mainbar navbar-nav float-start">
+        <ul class="mainbar navbar-nav float-start flex-row">
             <li class=" " >
                 <a class="navbar-brand" href="#" style="background-color: transparent;">
                     <img class="logo-header" src="{{url('assets/imgs/logoheader.png')}}">
@@ -65,7 +65,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="navbar-nav float-end">
+        <ul class="navbar-nav float-end flex-row d-sm-none d-md-flex">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarOther"
                    role="button" data-bs-toggle="dropdown" aria-expanded="false">

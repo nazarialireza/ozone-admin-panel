@@ -20,17 +20,16 @@
 
 <body class="wrapper">
 @include('layout.admin.include.top_nav')
-{{--<div class="container-fluid">--}}
-{{--    <div class="row">--}}
-{{--        <nav class="col-md-2 d-none d-md-block bg-light sidebar">--}}
-{{--            @include('layout.admin.include.sidebar')--}}
-{{--        </nav>--}}
-
-{{--        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 content">--}}
-{{--            @yield('content')--}}
-{{--        </main>--}}
-{{--    </div>--}}
-{{--</div>--}}
+<div class="container-fluid">
+    <div class="row flex-nowrap ">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark _sidebar">
+            @include('layout.admin.include.sidebar')
+        </div>
+        <div role="main" class="col py-3 content">
+            @yield('content')
+        </div>
+    </div>
+</div>
 
 
 <!-- Bootstrap core JavaScript

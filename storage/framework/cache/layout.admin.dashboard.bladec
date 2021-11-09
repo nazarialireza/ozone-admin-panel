@@ -20,17 +20,16 @@
 
 <body class="wrapper">
 <?php echo $this->runChild('layout.admin.include.top_nav'); ?>
-<?php /*<div class="container-fluid">*/ ?>
-<?php /*    <div class="row">*/ ?>
-<?php /*        <nav class="col-md-2 d-none d-md-block bg-light sidebar">*/ ?>
-<?php /*            <?php echo $this->runChild('layout.admin.include.sidebar'); ?>*/ ?>
-<?php /*        </nav>*/ ?>
-
-<?php /*        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4 content">*/ ?>
-<?php /*            <?php echo $this->yieldContent('content'); ?>*/ ?>
-<?php /*        </main>*/ ?>
-<?php /*    </div>*/ ?>
-<?php /*</div>*/ ?>
+<div class="container-fluid">
+ <div class="row flex-nowrap ">
+ <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark _sidebar">
+ <?php echo $this->runChild('layout.admin.include.sidebar'); ?>
+ </div>
+ <div role="main" class="col py-3 content">
+ <?php echo $this->yieldContent('content'); ?>
+ </div>
+ </div>
+</div>
 
 
 <!-- Bootstrap core JavaScript

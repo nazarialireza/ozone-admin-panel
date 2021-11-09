@@ -1,0 +1,12 @@
+
+._sidebar{
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  ._dark{
+    height: calc(100vh - 52px);
+    a{
+      color: rgba(255,255,255,.9);
+    }
+  }
+}

@@ -12360,3 +12360,17 @@ body {
   transform: translatex(-50%);
 }
 
+._sidebar {
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+._sidebar ._dark {
+  height: calc(100vh - 52px);
+}
+
+._sidebar ._dark a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
