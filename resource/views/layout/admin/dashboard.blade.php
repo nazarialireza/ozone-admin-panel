@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="{{ url('assets/css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{url('assets/vendors/fa/css/all.min.css')}}" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Custom styles for this template -->
 
@@ -22,9 +22,9 @@
 @include('layout.admin.include.top_nav')
 <div class="container-fluid">
     <div class="row flex-nowrap ">
-        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark _sidebar">
-            @include('layout.admin.include.sidebar')
-        </div>
+{{--        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark _sidebar">--}}
+{{--            @include('layout.admin.include.sidebar')--}}
+{{--        </div>--}}
         <div role="main" class="col py-3 content">
             @yield('content')
         </div>
