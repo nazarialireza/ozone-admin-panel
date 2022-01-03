@@ -111,7 +111,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="navbar-nav float-end flex-row ">
+        <ul class="navbar-nav flex-row">
             <li class="nav-item dropdown d-sm-none d-md-flex">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarOther"
                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -125,12 +125,12 @@
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
             </li>
-            <li class="nav-item d-sm-none d-md-flex">
+            <li class="nav-item ">
                 <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#searchModal">
                     <i class="fa fa-search"></i>
                 </a>
             </li>
-            <li class="nav-item d-sm-none d-md-flex">
+            <li class="nav-item ">
                 <a class="nav-link" href="#">
                     <i class="fa fa-bell">
                         <span class="position-absolute start-10 pt-0 pb-0 py-1 px-1 translate-middle badge rounded-pill bg-danger">
@@ -140,7 +140,7 @@
                     </i>
                 </a>
             </li>
-            <li class="nav-item d-sm-none d-md-flex">
+            <li class="nav-item ">
                 <a class="nav-link" href="#">
                     <i class="fa fa-user"></i>
                     <span class="position-absolute start-10 translate-middle p-1 bg-danger border border-light rounded-circle">
