@@ -1,3 +1,36 @@
+<style>
+
+    .search {
+        position: relative;
+        box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+    }
+
+    .search input {
+        height: 60px;
+        text-indent: 25px;
+        border: 2px solid #d6d4d4
+    }
+
+    .search input:focus {
+        box-shadow: none;
+        border: 2px solid blue
+    }
+
+    .search .fa-search {
+        position: absolute;
+        top: 20px;
+        left: 16px
+    }
+
+    .search button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 50px;
+        width: 110px;
+        background: blue
+    }
+</style>
 <nav class="navbar  navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container-fluid">
         <ul class="mainbar navbar-nav float-start flex-row">
@@ -93,7 +126,7 @@
                 </ul>
             </li>
             <li class="nav-item d-sm-none d-md-flex">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#searchModal">
                     <i class="fa fa-search"></i>
                 </a>
             </li>
@@ -130,3 +163,33 @@
         </ul>
     </div>
 </nav>
+
+<!-- Modal -->
+<div class="modal fade bg-dark bg-opacity-50" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModelLabel"><i class="fa fa-search"></i> </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="my-5" action="#" method="post">
+                    <div class="container">
+                        <div class="row height d-flex justify-content-center align-items-center">
+                            <div class="col-md-10">
+                                <div class="search">
+                                    <i class="fa fa-search"></i>
+                                    <input type="text" class="form-control" placeholder="Search your idea? Ask Now">
+                                    <button class="btn btn-primary">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a class="nav-link" href="#">More</a>
+            </div>
+        </div>
+    </div>
+</div>

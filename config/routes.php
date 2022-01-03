@@ -17,4 +17,8 @@ $routes->add('/', new Routing\Route('/', [
     '_controller' => 'Controller\PageController::index',
 ]));
 
+$routes->add('login', new Routing\Route('login', [
+  '_controller' => 'Controller\PageController::login',
+]));
+
 return $routes;

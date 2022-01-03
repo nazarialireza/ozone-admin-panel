@@ -21,4 +21,11 @@ class PageController
         //dd($request,new Response() );
         return new Response(View::make()->run("$page", ['pathInfo' => $pathInfo]));
     }
+
+  public function login($page)
+  {
+    $pathInfo = $_SERVER['PATH_INFO'];
+    //dd($request,new Response() );
+    return new Response(View::make()->run("$page", ['pathInfo' => $pathInfo]));
+  }
 }

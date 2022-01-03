@@ -78,4 +78,18 @@
     -o-transform: translatex(-50%);
     transform: translatex(-50%);
   }
+  .dropdown-menu {
+    position: absolute;
+  }
+}
+// fix width of fontawesome by 16px
+.fa{
+  text-align: center;
+  width: 16px !important;
+}
+.modal-header {
+  border-bottom: 0 !important;
+}
+.modal-footer{
+  border-top: 0 !important;
 }
