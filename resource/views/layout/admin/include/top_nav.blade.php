@@ -105,7 +105,7 @@
                 </a></li>
             <li class="nav-item d-sm-none d-md-flex">
                 <a class="nav-link" href="#">
-                    <i class="fa fa-tasks"></i>
+                    <i class="fa fa-tasks"> </i>
                     <span class="nav-title"> Tasks</span>
                     <span class="nav-short"> tasks</span>
                 </a>
@@ -131,7 +131,8 @@
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="#">
+                <a class="nav-link dropdown-toggle" href="#" id="notificationUserLinks"
+                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa fa-bell">
                         <span class="position-absolute start-10 pt-0 pb-0 py-1 px-1 translate-middle badge rounded-pill bg-danger">
                             <span class=""><small><small><small>99+</small></small></small></span>
@@ -139,6 +140,42 @@
                         </span>
                     </i>
                 </a>
+                <ul class="dropdown-menu dropdown-lg dropdown-menu-end" aria-labelledby="notificationUserLinks">
+                    <li>
+                        <div class="notifications-item">
+                            <img src="{{url('uploads/users/a/avatar.128.jpg')}}" alt="img">
+                            <div class="notifications-text" >
+                                <h4>John Doe</h4>
+                                <i class="fa fa-phone-slash notifications-icon text-danger " ></i>
+                                <p>Miss call at {{ date('Y-m-d H:m:s') }}</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="notifications-item">
+                            <img src="{{url('uploads/users/a/avatar.128.jpg')}}" alt="img">
+                            <div class="notifications-text">
+                                <h4>John Doe
+                                    <span class="badge rounded-pill bg-dark bg-opacity-50" style="font-size: 12px;">
+                                        {{date_between(date('Y-m-d H:m:s', strtotime("-1 day")),date('Y-m-d H:m:s'))}} day ago
+                                    </span>
+                                </h4>
+                                <i class="fa fa-message notifications-icon text-warning "></i>
+                                <p>New message at {{ date('Y-m-d H:m:s') }}</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="notifications-item">
+                            <div class="notifications-text">
+                                <i class="fa fa-pencil-ruler me-2 float-start m-5p"></i><h4> Policy Update</h4>
+                                <i class="fa fa-gear notifications-icon"></i>
+                                <p>New policy update for {{ date('Y-m-d') }}, services, products and much more for new features</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a class="dropdown-item" href="#">All Notification</a></li>
+                </ul>
             </li>
             <li class="nav-item ">
                 <a class="nav-link" href="#">
